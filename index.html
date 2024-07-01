@@ -4,19 +4,19 @@
     <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="ACM Workshop on Decentralized Finance Security and Privacy">
+    <meta name="description" content="ACM Workshop on Decentralized Finance and Security">
     <meta name="keywords" content="DeFi, Security, Privacy">
     <meta name="author" content="DeFi Chairs">
 
     <meta name="twitter:card" content="summary_large_image">
-    <!-- <meta name="twitter:site" content="@defiworkshop"> -->
-    <!-- <meta name="twitter:creator" content="@defiworkshop"> -->
-    <meta name="twitter:title" content="ACM Workshop on Decentralized Finance Security and Privacy">
+    <meta name="twitter:title" content="ACM Workshop on Decentralized Finance and Security">
     <meta name="twitter:description"
-          content="The ACM Workshop on Decentralized Finance Security and Privacy brings together DeFi researchers, practitioners, developers, and users from all over the world to explore cutting-edge ideas and results.">
+          content="The ACM Workshop on Decentralized Finance and Security brings together DeFi researchers, practitioners, developers, and users from all over the world to explore cutting-edge ideas and results.">
     <meta name="twitter:image" content="https://mk0genesisblockal487.kinstacdn.com/wp-content/uploads/2020/06/DeFi.jpg">
 
-    <title>ACM Workshop on Decentralized Finance (ACM DeFi 2024)</title><!-- Bootstrap core CSS -->
+    <title>ACM Workshop on Decentralized Finance and Security (DeFi'24)</title>
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
@@ -27,29 +27,19 @@
     <link href="css/agency.css" rel="stylesheet">
     <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
     <style type="text/css">
-        i.fas,
-        i.fab {
-            border: 1px solid red;
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
         }
-
-        .fa-fish {
-            color: salmon;
-        }
-
-        .fa-frog {
-            color: green;
-        }
-
-        .fa-user-ninja.vanished {
-            opacity: 0.0;
-        }
-
-        .fa-facebook {
-            color: rgb(59, 91, 152);
+        .column {
+            flex: 1;
+            min-width: 400px; /* Adjust this value based on your layout requirements */
         }
     </style>
 </head>
+
 <body id="page-top">
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -62,20 +52,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
-                </li>
-                <!--                    <li class="nav-item">-->
-                <!--                        <a class="nav-link js-scroll-trigger" href="#programme">Programme</a>-->
-                <!--                    </li>-->
-                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#cfp">Call for Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#best-papers">
+                        <i class="fas fa-trophy"></i>Best Papers Award<i class="fas fa-trophy"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#cfs">Call for Sponsorship</a>
                 </li>
-                <!--                    <li class="nav-item">-->
-                <!--                        <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>-->
-                <!--                    </li>-->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown">Previous Editions</a>
                     <ul class="dropdown-menu">
@@ -112,45 +98,13 @@
 </header>
 
 
-<!-- CFP -->
-
-<!--
-AFT 2024
-    Abstract registration deadline: May 15th, 2024 (AoE)
-    Economics of Computation (EC’24) submission: Please note that the full paper deadline has been set after the notification deadline for EC’24. As such, authors of AFT relevant topics with EC submissions are encouraged to register their abstracts prior to the EC notification and subsequently can withdraw the registration if accepted to EC.
-    Paper submission deadline: May 22nd, 2024 (AoE)
-    Registration opens: June 7th, 2024
-    Notification: July 3rd, 2024
-    Camera ready: July 24th, 2024
-    AFT conference: September 23-25, 2024
-    (Economics of Payments XIII: September 25-27, 2024)
-
-FC 2024
-    Paper submission	18 September 2023
-    Paper notification	25 November 2023
-    Workshop and tutorial submission	1 September 2023*
-    Workshop and tutorial notification	15 September 2023
-    Final pre-proceedings papers	12 January 2024
-    Conference	4–8 March 2024
-
-CCS Recommendation
-- CfP and Website ready: May 02, 2024
-- Suggested Paper Submission Deadline: June 20, 2024
-- Suggested Author Notification: August 08, 2024
-- Submission of Camera-Ready Papers to Publisher: September 05, 2024
-
-I Recommend:
-- Paper Submission Deadline: July 5th, 2024 (Friday)
-- Author Notification: August 5th, 2024 (Monday)
-- Submission of Camera-Ready Papers to Publisher: September 5th, 2024
--->
-
-
 <section id="cfp">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-justify">
                 <h2 class="section-heading text-uppercase">Call for Papers</h2>
+
+                <h3 class="section-subheading">Overview</h3>
 
                 <p>Decentralized Finance (DeFi) has experienced tremendous growth, transforming from a niche market to a
                     thriving ecosystem that has captured the attention of both crypto enthusiasts and traditional
@@ -171,68 +125,99 @@ I Recommend:
                     knowledge sharing and innovation, we aim to accelerate the growth of a secure and trustworthy DeFi
                     ecosystem that can drive the next phase of global financial inclusion and empowerment.</p>
 
-                <h3 class="section-subheading">Submission Server</h3>
-                <a href="https://defi24.hotcrp.com/" target="_blank" rel="noopener noreferrer">https://defi24.hotcrp.com/</a>
+                <div class="flex-container">
+                    <div class="column">
+                        <h3 class="section-subheading">Submission Server</h3>
+                        <a href="https://defi24.hotcrp.com/" target="_blank" rel="noopener noreferrer">https://defi24.hotcrp.com/</a>
 
-                <h3 class="section-subheading">Important Dates</h3>
+                        <h3 class="section-subheading">Important Dates</h3>
 
-                <ul>
-                    <li>Submission deadline: July 15th, 2024 (AoE)</li>
-                    <li>Author notification: August 25th, 2024 (AoE)</li>
-                    <li>Camera-ready deadline: September 5th, 2024 (AoE)</li>
-                    <li>Workshop: October 18th, 2024 </li>
-                </ul>
+                        <ul class="noindent">
+                            <li>Submission deadline: July 15th, 2024 (AoE)</li>
+                            <li>Author notification: August 25th, 2024 (AoE)</li>
+                            <li>Camera-ready deadline: September 5th, 2024 (AoE)</li>
+                            <li>Workshop: October 18th, 2024</li>
+                        </ul>
+
+                        <h3 class="section-subheading">Steering Committee</h3>
+                        <ul class="noindent">
+                            <li><a href="https://people.eecs.berkeley.edu/~dawnsong/" target="_blank">Dawn Song</a>,
+                                University
+                                of California, Berkeley, USA
+                            </li>
+                            <li><a href="https://disco.ethz.ch/members/wroger" target="_blank">Roger Wattenhofer</a>,
+                                ETH
+                                Zurich, Switzerland
+                            </li>
+                            <li><a href="http://www.arthurgervais.com" target="_blank">Arthur Gervais</a>, University
+                                College
+                                London, UK
+                            </li>
+                            <li><a href="https://philipp.jovanovic.io" target="_blank">Philipp Jovanovic</a>, University
+                                College
+                                London, UK
+                            </li>
+                        </ul>
 
 
+                        <h3 class="section-subheading">Program Committee Co-chairs</h3>
+                        <ul class="noindent">
+                            <li><a href="https://lzhou1110.github.io" target="_blank">Liyi Zhou</a>, The University of
+                                Sydney
+                            </li>
+                            <li><a href="https://qin.ac" target="_blank">Kaihua Qin</a>, Yale University</li>
+                        </ul>
+                    </div>
+                    <div class="column">
 
-                <h3 class="section-subheading">Program Committee Co-chairs</h3>
-                <ul class="noindent">
-                    <li><a href="https://lzhou1110.github.io" target="_blank">Liyi Zhou</a>, The University of Sydney
-                    </li>
-                    <li><a href="https://qin.ac" target="_blank">Kaihua Qin</a>, Yale University</li>
-                </ul>
+                        <h3 class="section-subheading">Program Committee</h3>
 
-                <h3 class="section-subheading">Program Committee</h3>
-                (To be announced)
-                <!--                <ul class="noindent">-->
-                <!--                    <li><a href="mailto:alex.biryukov@uni.lu" target="_blank">Alex Biryukov</a>, University of Luxembourg</li>-->
-                <!--                    <li><a href="mailto:rainer.boehme@uibk.ac.at" target="_blank">Rainer Böhme</a>, Universität Innsbruck, Austria</li>-->
-                <!--                    <li><a href="mailto:s.chaliasos21@imperial.ac.uk" target="_blank">Stefanos Chaliasos</a>, Imperial College London</li>-->
-                <!--                    <li><a href="mailto:jachiang@ucla.edu" target="_blank">James Hsin-yu Chiang</a>, Technical University of Denmark</li>-->
-                <!--                    <li><a href="mailto:j.clark@concordia.ca" target="_blank">Jeremy Clark</a>, Concordia University</li>-->
-                <!--                    <li><a href="mailto:ddas@fortinet.com" target="_blank">Dipanjan Das</a>, Fortinet Inc.</li>-->
-                <!--                    <li><a href="mailto:jens.ernstberger@gmail.com" target="_blank">Jens Ernstberger</a>, Technical University of Munich</li>-->
-                <!--                    <li><a href="mailto:vero.estrada@epfl.ch" target="_blank">Vero Estrada-Galiñanes</a>, EPFL</li>-->
-                <!--                    <li><a href="mailto:hlioba@ethz.ch" target="_blank">Lioba Heimbach</a>, ETH Zurich</li>-->
-                <!--                    <li><a href="mailto:lkiffer@ethz.ch" target="_blank">Lucianna Kiffer</a>, ETH Zurich</li>-->
-                <!--                    <li><a href="mailto:jli29@gmu.edu" target="_blank">Jiasun Li</a>, George Mason University</li>-->
-                <!--                    <li><a href="mailto:dmoroz@g.harvard.edu" target="_blank">Daniel Moroz</a>, Harvard University</li>-->
-                <!--                    <li><a href="mailto:alexandrobadia@gmail.com" target="_blank">Alex Obadia</a></li>-->
-                <!--                    <li><a href="mailto:tim.roughgarden@gmail.com" target="_blank">Tim Roughgarden</a>, Columbia University & a16z Crypto</li>-->
-                <!--                    <li><a href="mailto:florian.tschorsch@tu-berlin.de" target="_blank">Florian Tschorsch</a>, TU Berlin</li>-->
-                <!--                    <li><a href="mailto:m.vasek@ucl.ac.uk" target="_blank">Marie Vasek</a>, University College London</li>-->
-                <!--                    <li><a href="mailto:xin@uniswap.org" target="_blank">Xin Wan</a>, Uniswap Labs</li>-->
-                <!--                    <li><a href="mailto:yewang.ethz@gmail.com" target="_blank">Ye Wang</a>, University of Macau</li>-->
-                <!--                    <li><a href="mailto:aviv.yaish@mail.huji.ac.il" target="_blank">Aviv Yaish</a>, The Hebrew University, Jerusalem</li>-->
-                <!--                    <li><a href="mailto:lzhou1110@gmail.com" target="_blank">Liyi Zhou</a>, Imperial College London</li>-->
-                <!--                    <li><a href="mailto:yajin_zhou@zju.edu.cn" target="_blank">Yajin Zhou</a>, Zhejiang Universiry & Blocksec</li>-->
-                <!--                </ul>-->
+                        <ul class="noindent">
+                            <li><a href="mailto:alex.biryukov@uni.lu">Alex Biryukov</a>, University of Luxembourg</li>
+                            <li><a href="mailto:aviv@avivyaish.com">Aviv Yaish</a>, The Hebrew University</li>
+                            <li><a href="mailto:shou@fuzz.land">Chaofan Shou</a>, Fuzzland</li>
+                            <li><a href="mailto:christof.ferreira.torres@gmail.com">Christof Ferreira Torres</a>, ETH
+                                Zurich
+                            </li>
+                            <li><a href="mailto:its.dipanjan.das@gmail.com">Dipanjan Das</a>, Fortinet Inc.</li>
+                            <li><a href="mailto:florian.tschorsch@tu-dresden.de">Florian Tschorsch</a>, TU Dresden</li>
+                            <li><a href="mailto:ghassan@karame.org">Ghassan Karame</a>, Ruhr-University Bochum</li>
+                            <li><a href="mailto:james.chiangwu@gmail.com">James Hsin-yu Chiang</a>, Aarhus University
+                            </li>
+                            <li><a href="mailto:jens.ernstberger@gmail.com">Jens Ernstberger</a></li>
+                            <li><a href="mailto:pulpspy@gmail.com">Jeremy Clark</a>, Concordia University</li>
+                            <li><a href="mailto:yewang.ethz@gmail.com">Kanye Ye Wang</a>, University of Macau</li>
+                            <li><a href="mailto:kb742@cornell.edu">Kushal Babel</a>, Monad Labs</li>
+                            <li><a href="mailto:hlioba@ethz.ch">Lioba Heimbach</a>, ETH Zurich</li>
+                            <li><a href="mailto:manvir.schneider@gmail.com">Manvir Schneider</a>, Cardano Foundation
+                            </li>
+                            <li><a href="mailto:p.p.berrang@bham.ac.uk">Pascal Berrang</a>, University of Birmingham
+                            </li>
+                            <li><a href="mailto:pawel.szalachowski@smartcontract.com">Pawel Szalachowski</a>, Chainlink
+                                Labs
+                            </li>
+                            <li><a href="mailto:sarisht.wadhwa@duke.edu">Sarisht Wadhwa</a>, Duke University</li>
+                            <li><a href="mailto:stefanos@chaliasos.com">Stefanos Chaliasos</a>, Imperial College London
+                            </li>
+                            <li><a href="mailto:ttsuchiy@andrew.cmu.edu">Taro Tsuchiya</a>, Carnegie Mellon University
+                            </li>
+                            <li><a href="mailto:tim.roughgarden@gmail.com">Tim Roughgarden</a>, Columbia University @
+                                a16z crypto
+                            </li>
+                            <li><a href="mailto:csxluo@comp.polyu.edu.hk">Xiapu Luo</a>, The Hong Kong Polytechnic
+                                University
+                            </li>
+                            <li><a href="mailto:xin@uniswap.org">Xin Wan</a>, Uniswap Labs</li>
+                            <li><a href="mailto:yajin@blocksec.com">Yajin Zhou</a>, BlockSec & Zhejiang University</li>
+                            <li><a href="mailto:yvonlanthen@ethz.ch">Yann Vonlanthen</a>, ETH Zurich</li>
+                            <li><a href="mailto:zhey@berkeley.edu">Zhe Ye</a>, UC Berkeley</li>
+                            <li><a href="mailto:cszhli@comp.polyu.edu.hk">Zihao Li</a>, The Hong Kong Polytechnic
+                                University
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <h3 class="section-subheading">Steering Committee</h3>
-                <ul class="noindent">
-                    <li><a href="https://people.eecs.berkeley.edu/~dawnsong/" target="_blank">Dawn Song</a>, University
-                        of California, Berkeley, USA
-                    </li>
-                    <li><a href="https://disco.ethz.ch/members/wroger" target="_blank">Roger Wattenhofer</a>, ETH
-                        Zurich, Switzerland
-                    </li>
-                    <li><a href="http://www.arthurgervais.com" target="_blank">Arthur Gervais</a>, University College
-                        London, UK
-                    </li>
-                    <li><a href="https://philipp.jovanovic.io" target="_blank">Philipp Jovanovic</a>, University College
-                        London, UK
-                    </li>
-                </ul>
 
                 <h3 class="section-subheading">Topics of Interest</h3>
                 <p>Topics of interest include (but are not limited to):</p>
@@ -342,6 +327,89 @@ I Recommend:
     </div>
 </section>
 
+
+<section id="best-papers" class="bg-dark py-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">DeFi Academic Best Papers Award 2023</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="section-subheading">About the Award</h3>
+                <p>The DeFi Academic Best Papers Award 2023 is presented to authors whose work represents outstanding and groundbreaking research in all essential aspects of DeFi. The award will be bestowed upon four distinguished papers focused on the following perspectives:</p>
+                <ul>
+                    <li><b>Track A:</b> Best Theoretical Research Paper (x2)</li>
+                    <li><b>Track B:</b> Best Practical Research Paper (x2)</li>
+                </ul>
+                <p>The award carries a USDT/DAI/USDC $500 prize for each winning paper and comes with a statue and certificate to commemorate.</p>
+
+                <h3 class="section-subheading">Eligibility and Submission</h3>
+                <p>Authors must self-nominate their work for consideration. Eligible papers should address topics within DeFi and must have been published in a peer-reviewed journal, conference, or workshop with proceedings between January 1, 2023, and December 31, 2023.</p>
+
+                <h3 class="section-subheading">Schedule</h3>
+                <ul>
+                    <li><b>1st July:</b> Call for nomination opened</li>
+                    <li><b>15th July:</b> Call for nomination finished</li>
+                    <li><b>16th July ~ 20th August:</b> ACM DeFi Security PC Internal Voting Period</li>
+                    <li><b>25th August:</b> Award recipients are notified</li>
+                </ul>
+
+                <h3 class="section-subheading">Additional Information</h3>
+                <p>Only authors of the awarded papers will be notified via email. These authors will then be required to present their papers at the ACM CCS Workshop on Decentralized Finance and Security 2024 (DeFi'24), which will be held in Salt Lake City on October 18th. Presentations can be given either remotely or on-site.</p>
+                <p>Additionally, authors of awarded papers will be required to submit a 2-minute video summarizing their research, which will be featured on our website.</p>
+
+                <h3 class="section-subheading">Self-Nomination Form</h3>
+                <iframe src="https://forms.gle/yzMmTfC3NcxQDBKG9" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <h3 class="section-subheading">Instructions for PC Members</h3>
+                <p>As a respected member of the ACM DeFi Security Program Committee, your expertise and judgment are crucial in determining the recipients of this year’s awards. Below, you will find the nominated papers across two tracks. Please review each submission carefully and cast your vote according to the guidelines provided.</p>
+
+                <div class="card-deck">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Confidentiality</h5>
+                            <p class="card-text">Please keep your vote confidential to maintain the integrity of the selection process.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Voting Criteria</h5>
+                            <p class="card-text">Consider the originality, impact, clarity, and relevance of the research to DeFi in your evaluation.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Voting Process</h5>
+                            <p class="card-text">For each track, please select up to two papers that you believe are most deserving of the award. You can also choose to abstain if you feel that none of the papers meet the award criteria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck mt-4">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Anonymity</h5>
+                            <p class="card-text">This is an anonymous poll. Only invited emails can vote, and only one response is allowed per voter. However, you may edit your response if needed.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Review Process</h5>
+                            <p class="card-text">We will reveal the top two results in each track on the 21st of July. The chairs will then further review these four papers to determine if they are appropriate for the award. If any paper is deemed unsuitable, an email will be sent to all committee members explaining the reasons for its removal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="cfs">
     <div class="container">
         <div class="row">
@@ -376,54 +444,11 @@ I Recommend:
     </div>
 </section>
 
-<!--<section class="bg-light" id="sponsors">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12 text-justify">-->
-<!--                <h2 class="section-heading text-uppercase">Sponsors</h2>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-4 offset-lg-2 d-flex align-items-center justify-content-center">-->
-<!--                <a href="https://eigenphi.io/" target="_blank">-->
-<!--                    <img src="img/eigenphi.png" alt="EigenPhi" class="img-fluid mx-auto" style="width: 80%;">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 d-flex align-items-center justify-content-center">-->
-<!--                <a href="https://drklab.net/" target="_blank">-->
-<!--                    <img src="img/drklab.jpg" alt="DKR Lab" class="img-fluid mx-auto">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row mt-4">-->
-<!--            <div class="col-lg-3 d-flex align-items-center justify-content-center">-->
-<!--                <a href="https://blocksec.com/" target="_blank">-->
-<!--                    <img src="img/blocksec.png" alt="BlockSec" class="img-fluid mx-auto">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-3 d-flex align-items-center justify-content-center">-->
-<!--                <a href="https://uniswap.org/" target="_blank">-->
-<!--                    <img src="img/uniswap.png" alt="Uniswap Labs" class="img-fluid mx-auto" style="width: 80%;">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-3 d-flex align-items-center justify-content-center">-->
-<!--                <a href="https://gotcha.land/" target="_blank">-->
-<!--                    <img src="img/gotcha.png" alt="GotCHA" class="img-fluid mx-auto" style="width: 80%;">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-3 d-flex align-items-center justify-content-center">-->
-<!--                <a href="https://d23e.ch/" target="_blank">-->
-<!--                    <img src="img/d23e.png" alt="Decentralized Intelligence" class="img-fluid mx-auto" style="width: 70%;">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
-<section id="questions">
+<section id="questions" class="bg-dark">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-justify">
+            <div class="col-lg-12 text-justify text-white">
                 <h2 class="section-heading text-uppercase">Questions?</h2>
                 <p>Send direct queries via email to <a href="mailto:chairs@defi.security" target="_blank">chairs@defi.security</a>.
                 </p>
