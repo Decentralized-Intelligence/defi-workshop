@@ -14,6 +14,10 @@ p {
     text-align: left;
 }
 
+.highlight {
+    color: #d44;
+}
+
 a {
     color: #b33;
 }
@@ -268,3 +272,51 @@ header.masthead .intro-text .intro-heading {
     margin-top: 0px;
     margin-left: 10px;
 }
+
+.section-heading {
+    cursor: pointer; /* Indicate the heading is clickable */
+}
+
+.section-content {
+    display: none; /* Collapsed by default */
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+}
+
+.section-heading span {
+    font-size: 0.8em; /* Adjust size of the indicator */
+    margin-left: 10px;
+    color: gray; /* Style the indicator */
+}
+
+/* General box styling for all sponsors */
+.sponsor-box {
+    width: 200px; /* Fixed width for all sponsor boxes */
+    height: 200px; /* Fixed height for all sponsor boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd; /* Border to make the grid visible */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+}
+
+/* Ensures logos are sized appropriately within the boxes */
+.sponsor-logo {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.text-warning {
+    color: #FFD700; /* Gold color */
+}
+
+.text-secondary {
+    color: #C0C0C0; /* Silver color */
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
