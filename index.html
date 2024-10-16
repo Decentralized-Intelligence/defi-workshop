@@ -38,6 +38,39 @@
             flex: 1;
             min-width: 400px; /* Adjust this value based on your layout requirements */
         }
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .popup-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 800px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -105,16 +138,26 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-justify">
-                <h2 class="section-heading text-uppercase">Keynote -- Modern Blockchains for the Modern Security Engineer</h2>
+                <h2 class="section-heading text-uppercase">Keynote -- Modern Blockchains for the Modern Security
+                    Engineer</h2>
 
 
             </div>
             <div class="col-lg-12 text-justify">
                 <p>
-                    In this talk, I discuss how modern blockchains have fundamentally different characteristics from early ones in terms of cost, latency, throughput, scaling, expressivity, governance, and power consumption. However, the evolution from the old to the modern was slow, full of setbacks, and confusion, and the significant shift in capabilities was easy to miss. Using the Sui blockchain as an example, I present the current technologies for high-performance consensus, transaction processing, execution, and data dissemination.
+                    In this talk, I discuss how modern blockchains have fundamentally different characteristics from
+                    early ones in terms of cost, latency, throughput, scaling, expressivity, governance, and power
+                    consumption. However, the evolution from the old to the modern was slow, full of setbacks, and
+                    confusion, and the significant shift in capabilities was easy to miss. Using the Sui blockchain as
+                    an example, I present the current technologies for high-performance consensus, transaction
+                    processing, execution, and data dissemination.
                 </p>
                 <p>
-                    I argue that modern blockchains are particularly useful as a “consistent core” to engineer large open security protocols, and illustrate this through the design of a new decentralized store, Walrus. In brief, assuming their modern capabilities, modern blockchains can resolve the hard coordination problems present in large security systems in a systematic, performant, and secure manner. They are a tool every security engineer needs to have in their toolbox.
+                    I argue that modern blockchains are particularly useful as a “consistent core” to engineer large
+                    open security protocols, and illustrate this through the design of a new decentralized store,
+                    Walrus. In brief, assuming their modern capabilities, modern blockchains can resolve the hard
+                    coordination problems present in large security systems in a systematic, performant, and secure
+                    manner. They are a tool every security engineer needs to have in their toolbox.
                 </p>
             </div>
 
@@ -123,7 +166,8 @@
         <div class="row">
 
             <div class="col-lg-4 d-flex justify-content-center">
-                <img src="img/g.danezis.jpg" alt="George Danezis" class="img-fluid rounded" loading="lazy" style="max-width: 300px;">
+                <img src="img/g.danezis.jpg" alt="George Danezis" class="img-fluid rounded" loading="lazy"
+                     style="max-width: 300px;">
             </div>
 
 
@@ -134,14 +178,20 @@
                 <br/>
                 <h4>Biography</h4>
                 <p>
-                    Prof George Danezis, B.A, M.A (Cantab), Ph.D, FBCS. George Danezis is Professor of Security and Privacy Engineering at the Department of Computer Science, University College London. He co-founded and acts as Chief Scientist at Mysten Labs since 2021. George has conducted research on Privacy Enhancing Technologies (PET) and Decentralized / Distributed Systems Security since 2000. His current research interests focus on secure communications, high-integrity systems to support privacy, blockchains, and decentralization. In the past, he co-founded chainspace.io in 2018, and his team was acquired in 2019 by Facebook Novi to help design the Diem payment system. In 2021, he departed and co-founded MystenLabs, to help build the Sui smart contracts platform and now the Walrus decentralized store.
+                    Prof George Danezis, B.A, M.A (Cantab), Ph.D, FBCS. George Danezis is Professor of Security and
+                    Privacy Engineering at the Department of Computer Science, University College London. He co-founded
+                    and acts as Chief Scientist at Mysten Labs since 2021. George has conducted research on Privacy
+                    Enhancing Technologies (PET) and Decentralized / Distributed Systems Security since 2000. His
+                    current research interests focus on secure communications, high-integrity systems to support
+                    privacy, blockchains, and decentralization. In the past, he co-founded chainspace.io in 2018, and
+                    his team was acquired in 2019 by Facebook Novi to help design the Diem payment system. In 2021, he
+                    departed and co-founded MystenLabs, to help build the Sui smart contracts platform and now the
+                    Walrus decentralized store.
                 </p>
             </div>
         </div>
     </div>
 </section>
-
-
 
 
 <!-- Programme -->
@@ -183,12 +233,15 @@
                 <td>10:20</td>
                 <td rowspan="2">Session 1: MEV and Transaction Dynamics</td>
                 <td>
-                    <strong>(Invited Talk) Demystifying DeFi MEV Activities in Flashbots Bundle</strong> <i>In Proceedings of the 2023
+                    <strong>(Invited Talk) Demystifying DeFi MEV Activities in Flashbots Bundle</strong> <i>In
+                    Proceedings of the 2023
                     ACM SIGSAC Conference on Computer and Communications Security, pp. 165-179. 2023.</i>
                     <strong class="highlight">Best DeFi Papers Award 2023</strong>
                     <br/>
                     Zihao Li, Jianfeng Li, Zheyuan He, Xiapu Luo, Ting Wang, Xiaoze Ni, Wenwu Yang, Xi Chen, and Ting
                     Chen
+                    <br/>
+                    <button onclick="openVideo('video/zihao.mp4')">Watch Video</button>
                 </td>
             </tr>
             <tr class="row4">
@@ -245,7 +298,8 @@
                 <td>13:50</td>
                 <td rowspan="2">Session 2: Transaction Efficiency and Economic Security Analysis</td>
                 <td>
-                    <strong>(Invited Talk) Clockwork Finance: Automated Analysis of Economic Security in Smart Contracts</strong> <i>In
+                    <strong>(Invited Talk) Clockwork Finance: Automated Analysis of Economic Security in Smart
+                        Contracts</strong> <i>In
                     2023 IEEE Symposium on Security and Privacy (SP), pp. 2499-2516. IEEE, 2023.</i>
                     <strong class="highlight">Best DeFi Papers Award 2023</strong>
                     <br>
@@ -276,10 +330,11 @@
                 </td>
                 <td>
 
-                    <strong>(Invited Talk) The Blockchain Imitation Game</strong> <i>In 32nd USENIX Security Symposium (USENIX Security
+                    <strong>(Invited Talk) The Blockchain Imitation Game</strong> <i>In 32nd USENIX Security Symposium
+                    (USENIX Security
                     23), pp. 3961-3978. 2023.</i>
                     <strong class="highlight">Best DeFi Papers Award 2023</strong>
-                <br/>
+                    <br/>
                     Kaihua Qin, Stefanos Chaliasos, Liyi Zhou, Benjamin Livshits, Dawn Song, and Arthur Gervais.
                 </td>
             </tr>
@@ -304,7 +359,8 @@
                     Session 4: Real-World Assets and Economic Mechanisms
                 </td>
                 <td>
-                    <strong>(Invited Talk) Foundations of Transaction Fee Mechanism Design</strong> <i>In Proceedings of the 2023
+                    <strong>(Invited Talk) Foundations of Transaction Fee Mechanism Design</strong> <i>In Proceedings of
+                    the 2023
                     Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), pp. 3856-3899. Society for Industrial and
                     Applied Mathematics, 2023.</i>
                     <strong class="highlight">Best DeFi Papers Award 2023</strong>
@@ -344,7 +400,8 @@
                 <h2>Best DeFi Papers Award 2023</h2>
 
                 <h3 class="section-subheading">About the Award</h3>
-                <p>Best DeFi Papers Award 2023 is presented to authors whose work represents outstanding and groundbreaking research in DeFi.</p>
+                <p>Best DeFi Papers Award 2023 is presented to authors whose work represents outstanding and
+                    groundbreaking research in DeFi.</p>
 
                 <h3 class="section-subheading">Practical Research Paper Track</h3>
                 <ul>
@@ -355,10 +412,12 @@
                         Kaihua Qin, Stefanos Chaliasos, Liyi Zhou, Benjamin Livshits, Dawn Song, and Arthur Gervais.
                     </li>
                     <li>
-                        <strong>Demystifying DeFi MEV Activities in Flashbots Bundle</strong> <i>In Proceedings of the 2023
+                        <strong>Demystifying DeFi MEV Activities in Flashbots Bundle</strong> <i>In Proceedings of the
+                        2023
                         ACM SIGSAC Conference on Computer and Communications Security, pp. 165-179. 2023.</i><br>
-                        Zihao Li, Jianfeng Li, Zheyuan He, Xiapu Luo, Ting Wang, Xiaoze Ni, Wenwu Yang, Xi Chen, and Ting
-                        Chen
+                        Zihao Li, Jianfeng Li, Zheyuan He, Xiapu Luo, Ting Wang, Xiaoze Ni, Wenwu Yang, Xi Chen, and
+                        Ting
+                        Chen<br/>
                     </li>
                 </ul>
 
@@ -366,13 +425,15 @@
                 <ul>
                     <li>
                         <strong>Foundations of Transaction Fee Mechanism Design</strong> <i>In Proceedings of the 2023
-                        Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), pp. 3856-3899. Society for Industrial and
+                        Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), pp. 3856-3899. Society for Industrial
+                        and
                         Applied Mathematics, 2023.</i><br/>
                         Hao Chung, and Elaine Shi.
                     </li>
                     <li>
-                        <strong>Clockwork Finance: Automated Analysis of Economic Security in Smart Contracts</strong> <i>In
-                        2023 IEEE Symposium on Security and Privacy (SP), pp. 2499-2516. IEEE, 2023.</i><br>
+                        <strong>Clockwork Finance: Automated Analysis of Economic Security in Smart Contracts</strong>
+                        <i>In
+                            2023 IEEE Symposium on Security and Privacy (SP), pp. 2499-2516. IEEE, 2023.</i><br>
                         Kushal Babel, Philip Daian, Mahimna Kelkar, and Ari Juels
                     </li>
                 </ul>
@@ -918,6 +979,16 @@
     </div>
 </section>
 
+<div id="videoPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeVideo()">&times;</span>
+        <video id="videoPlayer" width="100%" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -953,11 +1024,36 @@
     }
   }
 
+  function openVideo(videoPath) {
+    var popup = document.getElementById("videoPopup");
+    var video = document.getElementById("videoPlayer");
+    video.src = videoPath;
+    popup.style.display = "block";
+    video.play();
+  }
+
+  function closeVideo() {
+    var popup = document.getElementById("videoPopup");
+    var video = document.getElementById("videoPlayer");
+    popup.style.display = "none";
+    video.pause();
+    video.currentTime = 0;
+  }
+
+  // Close the popup if the user clicks outside of it
+  window.onclick = function(event) {
+    var popup = document.getElementById("videoPopup");
+    if (event.target == popup) {
+      closeVideo();
+    }
+  }
+
   // Initially collapse the section when the page loads
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('cfp-content').style.display = 'none'; // Collapsed by default
   });
 
 </script>
+
 </body>
 </html>
