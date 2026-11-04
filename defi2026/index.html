@@ -71,6 +71,20 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        #programme td:first-child {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 576px) {
+            #programme col.col0,
+            #programme col.col1 {
+                width: 1%;
+            }
+            #programme td {
+                padding: .5rem;
+            }
+        }
     </style>
 </head>
 
@@ -88,6 +102,9 @@
                 <!--                <li class="nav-item">-->
                 <!--                    <a class="nav-link js-scroll-trigger" href="#cfp">Call for Papers</a>-->
                 <!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#programme">Programme</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#best-papers">
                         <i class="fas fa-trophy"></i>Best DeFi Papers Award<i class="fas fa-trophy"></i>
@@ -176,41 +193,36 @@
 <section class="bg-light" id="programme">
     <div class="container">
         <h2 class="section-heading text-uppercase">Programme</h2>
+        <div class="table-responsive">
         <table class="table table-bordered">
             <col class="col0">
             <col class="col1">
             <col class="col2">
-            <col class="col3">
             <tbody>
             <tr class="table-primary">
-                <td><strong>Start</strong></td>
-                <td><strong>End</strong></td>
+                <td><strong>Time</strong></td>
                 <td><strong>Session</strong></td>
                 <td><strong>Title</strong></td>
             </tr>
             <tr>
-                <td>10:30</td>
-                <td>10:35</td>
+                <td>10:30–10:35</td>
                 <td>Welcome &amp; opening</td>
                 <td></td>
             </tr>
             <tr class="table-warning">
-                <td>10:35</td>
-                <td>11:30</td>
+                <td>10:35–11:30</td>
                 <td>Keynote</td>
                 <td>
                     <strong><a href="#keynote" class="js-scroll-trigger">Aggelos Kiayias</a></strong>, University of Edinburgh
                 </td>
             </tr>
             <tr>
-                <td>11:30</td>
-                <td>11:40</td>
+                <td>11:30–11:40</td>
                 <td>Changeover</td>
                 <td></td>
             </tr>
             <tr>
-                <td>11:40</td>
-                <td>12:05</td>
+                <td>11:40–12:05</td>
                 <td rowspan="2">Session 1</td>
                 <td>
                     <strong>(Invited Talk) Auspex: Unveiling Inconsistency Bugs of Transaction Fee Mechanism in Blockchain</strong> <i>In Proceedings of the 34th USENIX Security Symposium (USENIX Security '25).</i>
@@ -222,8 +234,7 @@
                 </td>
             </tr>
             <tr>
-                <td>12:05</td>
-                <td>12:30</td>
+                <td>12:05–12:30</td>
                 <td>
                     <strong>(Invited Talk) Maximal Extractable Value in Batch Auctions</strong> <i>In Proceedings of the 26th ACM Conference on Economics and Computation (EC '25).</i>
                     <br/><strong class="highlight">Best DeFi Papers Award 2025</strong>
@@ -232,14 +243,12 @@
                 </td>
             </tr>
             <tr class="table-primary">
-                <td>12:30</td>
-                <td>13:30</td>
+                <td>12:30–13:30</td>
                 <td>Lunch</td>
                 <td>🥪🥪🥪</td>
             </tr>
             <tr>
-                <td>13:30</td>
-                <td>13:55</td>
+                <td>13:30–13:55</td>
                 <td>Sponsor talk</td>
                 <td>
                     <strong>Otter: A Provably MEV-Resilient Automated Market Maker via Surplus Redistribution</strong>
@@ -250,8 +259,7 @@
                 </td>
             </tr>
             <tr>
-                <td>13:55</td>
-                <td>14:20</td>
+                <td>13:55–14:20</td>
                 <td rowspan="2">Session 2</td>
                 <td>
                     <strong>Execution Robustness of DeFi Liquidations: Implications for OEV-Based Selection</strong>
@@ -260,8 +268,7 @@
                 </td>
             </tr>
             <tr>
-                <td>14:20</td>
-                <td>14:45</td>
+                <td>14:20–14:45</td>
                 <td>
                     <strong>Prop RFQ: Proprietary Request for Quote as Pressure-Aware Exit Pricing for Redeemable Real-World Asset Tokens</strong>
                     <br/>
@@ -269,14 +276,12 @@
                 </td>
             </tr>
             <tr class="table-primary">
-                <td>15:00</td>
-                <td>15:30</td>
+                <td>15:00–15:30</td>
                 <td>Break</td>
                 <td>☕️☕️☕️</td>
             </tr>
             <tr>
-                <td>15:30</td>
-                <td>15:55</td>
+                <td>15:30–15:55</td>
                 <td rowspan="3">Session 3</td>
                 <td>
                     <strong>TaxTag: A Zero-Knowledge Tax Filing Protocol for Decentralized Finance</strong>
@@ -285,8 +290,7 @@
                 </td>
             </tr>
             <tr>
-                <td>15:55</td>
-                <td>16:20</td>
+                <td>15:55–16:20</td>
                 <td>
                     <strong>When Constant-Time Is Not Enough: Storage-Update Side Channels in Confidential DeFi</strong>
                     <br/>
@@ -294,8 +298,7 @@
                 </td>
             </tr>
             <tr>
-                <td>16:20</td>
-                <td>16:45</td>
+                <td>16:20–16:45</td>
                 <td>
                     <strong>Same-Shape Outflows: Recall-First Rules with LLM Triage for Real-Time DeFi Attack Detection Across Chains</strong>
                     <br/>
@@ -303,13 +306,13 @@
                 </td>
             </tr>
             <tr>
-                <td>16:45</td>
-                <td>17:00</td>
+                <td>16:45–17:00</td>
                 <td>Closing remarks</td>
                 <td></td>
             </tr>
             </tbody>
         </table>
+        </div>
     </div>
 </section>
 <!-- Best DeFi Papers Award -->
@@ -467,9 +470,6 @@
     </div>
 </section>
 
-
-<!--<section class="bg-light" id="programme">-->
-<!--</section>-->
 
 <section id="cfp">
     <div class="container">
@@ -650,129 +650,7 @@
     </div>
 </section>
 
-<section id="call-for-best-papers" class="bg-dark py-5 text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="section-heading text-uppercase"
-                    onclick="toggleSection('best-defi-content', 'best-defi-indicator')">
-                    Call for Best DeFi Papers Award 2025 <span id="best-defi-indicator">[+]</span>
-                </h2>
-                <div id="best-defi-content" class="section-content">
-                    <h3 class="section-subheading">About the Award</h3>
-                    <p>Best DeFi Papers Award 2025 is presented to authors whose work represents outstanding and
-                        groundbreaking research in all essential aspects of DeFi. The award will be bestowed upon two
-                        distinguished papers focused on the following perspectives:</p>
-                    <ul>
-                        <li><b>Track A:</b> Best Theoretical Research Paper (x1)</li>
-                        <li><b>Track B:</b> Best Applied Research Paper (x1)</li>
-                    </ul>
-                    <p>The award carries a USDT/DAI/USDC $500 prize for each winning paper and comes with a statue and
-                        certificate to commemorate.</p>
-
-                    <h3 class="section-subheading">Eligibility and Submission</h3>
-                    <p>Authors must self-nominate their work for consideration. Eligible papers should address topics
-                        within DeFi and must have been published in a peer-reviewed journal, conference, or workshop with
-                        proceedings between January 1, 2025, and December 31, 2025.
-                </p>
-
-                        
-
-                    <h3 class="section-subheading">Schedule</h3>
-                    <ul>
-                        <li><b>28th July:</b> Call for nomination opened</li>
-                        <li><b>10th August:</b> Call for nomination finished</li>
-                        <li><b>11th August ~ 15th September:</b> ACM DeFi Security PC Internal Voting Period</li>
-                        <li><b>20th September:</b> Award recipients are notified</li>
-                    </ul>
-
-                    <h3 class="section-subheading">Additional Information</h3>
-                    <p>Only authors of the awarded papers will be notified via email. These authors will then be
-                        required to
-                        present their papers at the ACM CCS Workshop on Decentralized Finance and Security 2026
-                        (DeFi'26),
-                        which will be held on November 19, 2026. Presentations can be given either remotely
-                        or
-                        on-site.</p>
-                    <p>Additionally, authors of awarded papers will be required to submit a 2-minute video summarizing
-                        their
-                        research, which will be featured on our website.</p>
-
-                                   <h3 class="section-subheading">Self-Nomination Form</h3>
-                                   <p>
-                                    Please submit your self-nomination form
-                                    via the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhHKMyi5Psp7utXcHxxG8brrD-VrwyugyXjfnxMBctHja-3g/viewform" target="_blank">following Google form</a>.
-                                   </p>
-
-
-                    <div class="col-lg-12 text-center">
-                        <h3 class="section-subheading">Instructions for PC Members</h3>
-                        <p>As a respected member of the ACM DeFi Security Program Committee who has opted in to vote for the 
-                            Best DeFi Papers Award, your expertise and judgment are crucial in determining this year’s recipients. 
-                            Below, you will find the nominated papers across two tracks. 
-                            Please review each submission carefully and cast your vote according to the provided guidelines.</p>
-
-                        <div class="card-deck">
-                            <div class="card bg-secondary text-white">
-                                <div class="card-body">
-                                    <h5 class="card-title">Confidentiality</h5>
-                                    <p class="card-text">Please keep your vote confidential to maintain the integrity of
-                                        the
-                                        selection process.</p>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary text-white">
-                                <div class="card-body">
-                                    <h5 class="card-title">Voting Criteria</h5>
-                                    <p class="card-text">Consider the originality, impact, clarity, and relevance of the
-                                        research to DeFi in your evaluation.</p>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary text-white">
-                                <div class="card-body">
-                                    <h5 class="card-title">Voting Process</h5>
-                                    <p class="card-text">For each track, please select one paper that you believe
-                                        are
-                                        most deserving of the award. You can also choose to abstain if you feel that
-                                        none of
-                                        the
-                                        papers meet the award criteria.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-deck mt-4">
-                            <div class="card bg-secondary text-white">
-                                <div class="card-body">
-                                    <h5 class="card-title">Anonymity</h5>
-                                    <p class="card-text">This is an anonymous poll. Only invited emails can vote, and
-                                        only
-                                        one
-                                        response is allowed per voter. However, you may edit your response if
-                                        needed.</p>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary text-white">
-                                <div class="card-body">
-                                    <h5 class="card-title">Review Process</h5>
-                                    <p class="card-text">We will reveal the top result in each track on the 16th of
-                                        August.
-                                        The chairs will then further review these three papers to determine if they are
-                                        appropriate for the award. If any paper is deemed unsuitable, an email will be
-                                        sent
-                                        to
-                                        all committee members explaining the reasons for its removal.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="cfs">
+<section class="bg-light" id="cfs">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-justify">
@@ -902,7 +780,6 @@
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('cfp-content').style.display = 'none'; // span by default
     document.getElementById('sponsorship-content').style.display = 'none'; // span by default
-    document.getElementById('best-defi-content').style.display = 'none'; // span by default
   });
 
 </script>
