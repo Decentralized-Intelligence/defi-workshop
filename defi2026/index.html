@@ -76,6 +76,19 @@
             white-space: nowrap;
         }
 
+        /* Fixed column widths on wider screens so expanding a note does not shift columns */
+        @media (min-width: 577px) {
+            #programme table {
+                table-layout: fixed;
+            }
+            #programme col.col0 {
+                width: 120px;
+            }
+            #programme col.col1 {
+                width: 145px;
+            }
+        }
+
         @media (max-width: 576px) {
             #programme col.col0,
             #programme col.col1 {
@@ -231,6 +244,17 @@
                     Zheyuan He, Zihao Li, Jiahao Luo, Feng Luo, Junhan Duan, Jingwei Li, Shuwei Song, Xiapu Luo, Ting Chen, and Xiaosong Zhang
                     <br/>
                     <button onclick="openVideo('../video/Zheyuan-defi26.mp4')"><strong class="highlight">Teaser Video</strong></button>
+                    <button type="button" data-toggle="collapse" data-target="#auspex-note" aria-expanded="false" aria-controls="auspex-note"><strong class="highlight">Note</strong></button>
+                    <div class="collapse" id="auspex-note">
+                        <p class="small mt-2 mb-0">
+                            Auspex uncovers a new class of vulnerabilities: TFM inconsistency bugs, which highlight
+                            inconsistencies between charged fees and actual resource consumption. In a
+                            <a href="https://ethresear.ch/t/ethereums-leaky-gas-tank-unveiling-13-costly-gas-model-inconsistencies/22989/5" target="_blank" rel="noopener noreferrer">recent discussion on the Ethereum Research forum</a>,
+                            we shared these findings with members of the Ethereum community, including Vitalik Buterin.
+                            The thread features detailed responses and further clarifications on specific examples. We
+                            encourage readers to explore the full discussion alongside the paper.
+                        </p>
+                    </div>
                 </td>
             </tr>
             <tr>
